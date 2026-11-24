@@ -1,0 +1,434 @@
+{
+  "filarmonica/cover": {
+    "src": "/work/filarmonica/cover.jpg",
+    "width": 2400,
+    "height": 1350,
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkAA4BaJZwAAuRYtYm8gAD+4ppQtHyEsZabKcAzBHKtFsMCDNXOwvmcmak9cg4eGSILhy8O7AKAAAA="
+  },
+  "filarmonica/park": {
+    "src": "/work/filarmonica/park.jpg",
+    "width": 2400,
+    "height": 1350,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAkAA4BaJZgCdADwSLqUOIAA9r+SSCySGX/WImcCu6t0IA4Z+4uP3BzBFjqoP/OxUet2gsI//YQV+4eCGwjQgAA="
+  },
+  "filarmonica/concept": {
+    "src": "/work/filarmonica/concept.jpg",
+    "width": 2774,
+    "height": 1843,
+    "blur": "data:image/webp;base64,UklGRoAAAABXRUJQVlA4IHQAAABwAgCdASoQAAsAA4BaJaQAEQE8VUXbo97fgaEAAP71JGKXodf4LCtebob0DA/K8HZYT50LbZLa5KS1mcqSjhoAQl6+lJz6ggjJ716YNBVz1iWvvgXXnufNXhmW+/2zpki/5SUQFPQcyQ3NDealJZIjdMAAAA=="
+  },
+  "filarmonica/site": {
+    "src": "/work/filarmonica/site.jpg",
+    "width": 3200,
+    "height": 2254,
+    "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAADQAQCdASoQAAsAA4BaJaQAAxf8YAHoAAD+3+okGsHij3Xv7x5wMJXle1ajfwAAAAA="
+  },
+  "filarmonica/massing": {
+    "src": "/work/filarmonica/massing.jpg",
+    "width": 2400,
+    "height": 1800,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAQAgCdASoQAAwAA4BaJaQAIEAZmQpg3byIAP7tglTYmCxQK+YtN1JUDgTPTP0V9L1TSzaCosOC1AAK+mZ7KnMNo19m6eKtityGuingAAA="
+  },
+  "filarmonica/elevation-a": {
+    "src": "/work/filarmonica/elevation-a.jpg",
+    "width": 3200,
+    "height": 874,
+    "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAACwAQCdASoQAAQAA4BaJaQAAudNb+ggAP73G+BpdahHEAAA"
+  },
+  "filarmonica/elevation-b": {
+    "src": "/work/filarmonica/elevation-b.jpg",
+    "width": 3200,
+    "height": 888,
+    "blur": "data:image/webp;base64,UklGRioAAABXRUJQVlA4IB4AAAAwAQCdASoQAAQAA4BaJaQAA3AA/vKXH01q3Ir/eAA="
+  },
+  "filarmonica/hall": {
+    "src": "/work/filarmonica/hall.jpg",
+    "width": 1920,
+    "height": 1072,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkAA4BaJYgCdADa62uJpAD+43QSwzDjW2rTqwg7pR0ofgrUWSbquDdQXnF849EzhbRfuIFe4pW6N/kAAA=="
+  },
+  "filarmonica/recital": {
+    "src": "/work/filarmonica/recital.jpg",
+    "width": 2400,
+    "height": 1351,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAkAA4BaJQBOgCPuPrTbBqAA/vSpVyfCPk9k7Y9c+ViGYh98DRxADItwRI8j4RzrIk8KYCZZQAAA"
+  },
+  "filarmonica/section-perspective": {
+    "src": "/work/filarmonica/section-perspective.jpg",
+    "width": 3200,
+    "height": 2207,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAsAA4BaJaQAAui8HPFRAAAA/vc+mtIurvOS6PMR4cTK1eZOkS9q4LtQ6+aILXBcddtTAI4jcInxyy65pYgAAAA="
+  },
+  "filarmonica/foyer": {
+    "src": "/work/filarmonica/foyer.jpg",
+    "width": 2400,
+    "height": 1329,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAkAA4BaJYwCdADaEJttsAD2kQ0sOmrBg4Usp6R8Oi05igsP/pkxFfGadY2Q95aFj/d1UmAAAA=="
+  },
+  "filarmonica/exhibition": {
+    "src": "/work/filarmonica/exhibition.jpg",
+    "width": 2400,
+    "height": 1329,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAkAA4BaJZwC7AEJ3FNnazAA/uYIXM45ItZDP0cC5d/k2eQN56kGAl/u2JvGXy30f9HJv5B+EgAA"
+  },
+  "filarmonica/section-cross": {
+    "src": "/work/filarmonica/section-cross.jpg",
+    "width": 3200,
+    "height": 1589,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAgAA4BaJaQAD45Om+vGUPlAAP74uTex90q9DzuhjXXJpSkfh5pPtBt5d0tj+xGwOdkBLRJh5wO0/7Eipxw+i4d1bsAA"
+  },
+  "filarmonica/studio": {
+    "src": "/work/filarmonica/studio.jpg",
+    "width": 2400,
+    "height": 1350,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACQAQCdASoQAAkAA4BaJQBOgBkULMAA/tBvwjupTN7CrzwDCy6npGnQz/It7X56TyAh3en49eylADMXTuEKCiMjlf7ALAAA"
+  },
+  "filarmonica/plan-basement": {
+    "src": "/work/filarmonica/plan-basement.jpg",
+    "width": 3200,
+    "height": 3195,
+    "blur": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAAAwAQCdASoQABAAA4BaJaQAA3AA/vOQkZCdGwraJTyPDhAAAAA="
+  },
+  "filarmonica/plan-ground": {
+    "src": "/work/filarmonica/plan-ground.jpg",
+    "width": 2573,
+    "height": 3200,
+    "blur": "data:image/webp;base64,UklGRi4AAABXRUJQVlA4ICIAAAAwAQCdASoNABAAA4BaJaQAA3AA/vQ9WacEtuphSatsAAAA"
+  },
+  "filarmonica/plan-1": {
+    "src": "/work/filarmonica/plan-1.jpg",
+    "width": 2578,
+    "height": 3200,
+    "blur": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoNABAAA4BaJaQAA3AA/vR+C5Glaf2cQ8GAAA=="
+  },
+  "filarmonica/plan-2": {
+    "src": "/work/filarmonica/plan-2.jpg",
+    "width": 3200,
+    "height": 3118,
+    "blur": "data:image/webp;base64,UklGRjgAAABXRUJQVlA4ICwAAABwAQCdASoQABAAA4BaJaVefAGIAAD+9AHHU1MBFpJY7CrLJwyW+xdw7AAAAA=="
+  },
+  "filarmonica/plan-3": {
+    "src": "/work/filarmonica/plan-3.jpg",
+    "width": 3200,
+    "height": 3118,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoQABAAA4BaJaV2AAGIAAD+9DqXUnR6gnD5ZIvZC+RTAAAA"
+  },
+  "filarmonica/plan-4": {
+    "src": "/work/filarmonica/plan-4.jpg",
+    "width": 3200,
+    "height": 3119,
+    "blur": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoQABAAA4BaJaQAA3AA/vQ6kQJMhvcVcJQAAA=="
+  },
+  "filarmonica/restaurant": {
+    "src": "/work/filarmonica/restaurant.jpg",
+    "width": 2400,
+    "height": 1329,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAkAA4BaJZQCdAC2GZ6iIADeTkK4t6gUbbZ+iIeE3n5LUO21XIBv2fAFKLgs1+GiwwzCNtQAAA=="
+  },
+  "filarmonica/section-long": {
+    "src": "/work/filarmonica/section-long.jpg",
+    "width": 3200,
+    "height": 1468,
+    "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAcAA4BaJaQAAuXDp+sgAP74uVwZ85r8rPraZ6ol3f/zOumCMdOQn5/uLzhCw9zSAAAA"
+  },
+  "filarmonica/detail": {
+    "src": "/work/filarmonica/detail.jpg",
+    "width": 3200,
+    "height": 1742,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAkAA4BaJaQAAuP2CAAA/vfvc1swZWmee1rKMROpgAAA"
+  },
+  "pavilion-ana-lupas/cover": {
+    "src": "/work/pavilion-ana-lupas/cover.jpg",
+    "width": 2400,
+    "height": 1884,
+    "blur": "data:image/webp;base64,UklGRmwAAABXRUJQVlA4IGAAAADwAQCdASoQAA0AA4BaJbACdADPhqD0gzAA/kR4NQin2Qg2wzX5kwQGTbEJxfKVAQWgUUlT+X5/cPJ2t6fgm0g3ymp7eeBBmu7aQTe2Twf/xy+cAAkkoKx/sfLFEBEwAAA="
+  },
+  "pavilion-ana-lupas/studies": {
+    "src": "/work/pavilion-ana-lupas/studies.jpg",
+    "width": 2157,
+    "height": 583,
+    "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAAQAA4BaJaQAA3AA/vSm5gAAAA=="
+  },
+  "pavilion-ana-lupas/sketch-mansard": {
+    "src": "/work/pavilion-ana-lupas/sketch-mansard.jpg",
+    "width": 2196,
+    "height": 1239,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADQAQCdASoQAAkAA4BaJaQAAl3MeGha4AD+9/DYX+58xn8dHMzr+q4uw/m+7SJN035exzEWAAA="
+  },
+  "pavilion-ana-lupas/sketch-shell": {
+    "src": "/work/pavilion-ana-lupas/sketch-shell.jpg",
+    "width": 1452,
+    "height": 1152,
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAADQAQCdASoQAA0AA4BaJaQAAjaEHaOUAAD++LpbrN3qB0n/MBslQxH3fqYdIZNu2CB4SjBRA/VGOWZAAAA="
+  },
+  "pavilion-ana-lupas/exploded": {
+    "src": "/work/pavilion-ana-lupas/exploded.jpg",
+    "width": 2712,
+    "height": 3106,
+    "blur": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAAAwAQCdASoOABAAA4BaJaQAA3AA/vRz/ls8cyrA0f88cozOsAA="
+  },
+  "pavilion-ana-lupas/section-perspective": {
+    "src": "/work/pavilion-ana-lupas/section-perspective.jpg",
+    "width": 2621,
+    "height": 3042,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoOABAAA4BaJaQAAuQ8E5GZbAAA/vZoC1sGmuGMJ1KmS/N0n8giXExxqokldyAlMUu9bku50/XNVOqZPXgp7XxkQwAAAA=="
+  },
+  "muzeu-paul-neagu/aerial": {
+    "src": "/work/muzeu-paul-neagu/aerial.jpg",
+    "width": 2400,
+    "height": 1204,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAwAgCdASoQAAgAA4BaJYwAD4ovqkslf0vwAAD+8Ka1JdlwmtGLZQFpLI27ejdLa08YnW9vfxGHxy/K+r9Zk1qq7XcA2rSG33i+p8+0qfb+uAAA"
+  },
+  "muzeu-paul-neagu/sketch": {
+    "src": "/work/muzeu-paul-neagu/sketch.jpg",
+    "width": 3200,
+    "height": 2409,
+    "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADQAQCdASoQAAwAA4BaJaQAAudlm+SrcAD+9z4PqxKeWvPfBzTzZ58pomkcCChezJLmgAAA"
+  },
+  "muzeu-paul-neagu/plaza": {
+    "src": "/work/muzeu-paul-neagu/plaza.jpg",
+    "width": 1803,
+    "height": 1010,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkAA4BaJQBOgBhoFVWAAP6U1iGjI4kEuogcYwDE2PReYrYMkFHdXrukuPp5r3u0ANJ8nqzmIvf5xKA4qdgQf1tbGa0Ic/oAAA=="
+  },
+  "muzeu-paul-neagu/garden": {
+    "src": "/work/muzeu-paul-neagu/garden.jpg",
+    "width": 1803,
+    "height": 1005,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAkAA4BaJQBOgBCWIwoAAP7wqj7H4VgJIaQA2benRkE4Oi/Mkr7ps8Zlmc39fNEvsXPyOL49/PYetPJzh42zMAA="
+  },
+  "muzeu-paul-neagu/passage": {
+    "src": "/work/muzeu-paul-neagu/passage.jpg",
+    "width": 1803,
+    "height": 1009,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkAA4BaJYwAAuhEVhVSQAD+mXy2hYfv3Js8dPa1huILBZehLTz3vwe+l25D9EcUSKvD1mRU23BWvVJG3pKN3r3v8YgA"
+  },
+  "muzeu-paul-neagu/site": {
+    "src": "/work/muzeu-paul-neagu/site.jpg",
+    "width": 3200,
+    "height": 2593,
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAAAwAQCdASoQAA0AA4BaJaQAA3AA/vMgDMPHHiJ/2PMfp7dylFDCuQ6XRLq2umBab13DV5XAAAA="
+  },
+  "muzeu-paul-neagu/facade": {
+    "src": "/work/muzeu-paul-neagu/facade.jpg",
+    "width": 2400,
+    "height": 1295,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAkAA4BaJZQAAvzRVGGPCAD+85sJzA8CSYC+1+YnO5aYOzsVcI0PYYjtviBtwff9XOONO2GluO92zBd4uAAA"
+  },
+  "muzeu-paul-neagu/plan-ground": {
+    "src": "/work/muzeu-paul-neagu/plan-ground.jpg",
+    "width": 2184,
+    "height": 1519,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAsAA4BaJaQAAp/RuoAA/vfxZAGJyLUrU47QmQFyAAAA"
+  },
+  "muzeu-paul-neagu/plan-1": {
+    "src": "/work/muzeu-paul-neagu/plan-1.jpg",
+    "width": 2181,
+    "height": 1517,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAsAA4BaJaQAAp/RuoAA/vfxZAGKgSxnJcOw8U2+YAAA"
+  },
+  "muzeu-paul-neagu/foyer": {
+    "src": "/work/muzeu-paul-neagu/foyer.jpg",
+    "width": 2400,
+    "height": 1046,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADwAQCdASoQAAcAA4BaJYwCdADHyxVsxAAA/sdqKjf84Ow+S/q0dipLNHyJ+z7tIZFsuyqs5BiWlUWKzcf1yaZ0S3qYzhagAAA="
+  },
+  "muzeu-paul-neagu/cafe": {
+    "src": "/work/muzeu-paul-neagu/cafe.jpg",
+    "width": 1705,
+    "height": 873,
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAgAA4BaJYwCdAEMRn2e4AD+7avVZRID9aPf32jUfq1uqcj2vccP9/qAK85KJx+3HWE/og2Alyp9K+Te4Pz0QAA="
+  },
+  "muzeu-paul-neagu/gallery": {
+    "src": "/work/muzeu-paul-neagu/gallery.jpg",
+    "width": 1705,
+    "height": 873,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoQAAgAA4BaJZQCdAYstkv+7Dp5wAD+x0r77z7gFXzieWdkaT6kxCLfHBzmjZKGftm4lDfud048taYhIcbAAA=="
+  },
+  "muzeu-paul-neagu/section": {
+    "src": "/work/muzeu-paul-neagu/section.jpg",
+    "width": 3200,
+    "height": 500,
+    "blur": "data:image/webp;base64,UklGRjYAAABXRUJQVlA4ICoAAACQAQCdASoQAAIAA4BaJaQAAp0LdJAA/u5n81DVDYiWuxYY4nl7K0AAAAA="
+  },
+  "rezidenta-turn-de-veghe/site": {
+    "src": "/work/rezidenta-turn-de-veghe/site.jpg",
+    "width": 2400,
+    "height": 1198,
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAgAA4BaJZQC7AEfz3XabaQA/tYlyth/yLyRdPGwPTzeH7yQ22my2R00OjbPUefi0AU5tyKaLGzmmlBAAA=="
+  },
+  "rezidenta-turn-de-veghe/axonometric": {
+    "src": "/work/rezidenta-turn-de-veghe/axonometric.jpg",
+    "width": 2747,
+    "height": 1664,
+    "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAAoAA4BaJaQAA3AA/vSrlEAAAA=="
+  },
+  "rezidenta-turn-de-veghe/section": {
+    "src": "/work/rezidenta-turn-de-veghe/section.jpg",
+    "width": 3200,
+    "height": 1116,
+    "blur": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoQAAYAA4BaJaQAA3AA/vToXncFvkAA"
+  },
+  "rezidenta-turn-de-veghe/bedroom": {
+    "src": "/work/rezidenta-turn-de-veghe/bedroom.jpg",
+    "width": 1891,
+    "height": 1342,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsAA4BaJZQAAuKul5j8AAD+Bzh0JhZ0IMEXPgKOTRyQ2SHttHjj/6Nd2UqDQxRmj9XwtlsULkkZWk54of0S0X+e2vwAAAA="
+  },
+  "rezidenta-turn-de-veghe/plan": {
+    "src": "/work/rezidenta-turn-de-veghe/plan.jpg",
+    "width": 1977,
+    "height": 1742,
+    "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAA4AA4BaJaQAA3AA/vREg2SgAA=="
+  },
+  "rezidenta-turn-de-veghe/interior": {
+    "src": "/work/rezidenta-turn-de-veghe/interior.jpg",
+    "width": 2400,
+    "height": 1684,
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAwAgCdASoQAAsAA4BaJYwCdADGldOC6y7IAADzJXTWpA8NduLah03fdEd+Xvih/r3QWCnTKYLH8ByTVOjoFR6uFp7YJAymXQYAAA=="
+  },
+  "scoala-lipovei/cover": {
+    "src": "/work/scoala-lipovei/cover.jpg",
+    "width": 2400,
+    "height": 1192,
+    "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAgAA4BaJQBdgCIAvqWgAP3CkFfg83ZLeIpwLHCU6CiJd2kG1lcN72yC0h3cP7KOAA=="
+  },
+  "scoala-lipovei/courtyard": {
+    "src": "/work/scoala-lipovei/courtyard.jpg",
+    "width": 1728,
+    "height": 1216,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsAA4BaJQBOgBUrLodwAAD+iEtQwwi1dFp72p5/1Rt9zSuxL/CrfWBDbgX0nzH1vAFj3CQ+oSMaQEEy9U3c1+0SM4kAAAA="
+  },
+  "scoala-lipovei/sketches": {
+    "src": "/work/scoala-lipovei/sketches.jpg",
+    "width": 3067,
+    "height": 3149,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQABAAA4BaJaQAAxbkyBy4nloAAP71A9daFPrjVWFjRih7b2cTAdPFycy7zmKRTg1CdTja8uwrgIzu4Q1gvnMn/obO4jsEVJQAAA=="
+  },
+  "scoala-lipovei/library": {
+    "src": "/work/scoala-lipovei/library.jpg",
+    "width": 1728,
+    "height": 1216,
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAsAA4BaJQBOgB3HZYOYAAD+g+QplTVPAwmrs67uggWhhMY70nv3NQk+69p1gqeuixNafAlNvm6fhtcDSYPi4Tlv2D8AAAA="
+  },
+  "scoala-lipovei/library-stair": {
+    "src": "/work/scoala-lipovei/library-stair.jpg",
+    "width": 1728,
+    "height": 1216,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAsAA4BaJQBOgCLJP8mgTQAA/mbUQpc5Ix8b571X48MRkZHhlNk+0iNkYiyMS2vL6tEDP9bGJj0aZFqCcgAA"
+  },
+  "scoala-lipovei/canteen": {
+    "src": "/work/scoala-lipovei/canteen.jpg",
+    "width": 1728,
+    "height": 1216,
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAsAA4BaJYgCdACZRKHWAADfh8k8eUwPz32xWL//VaPCbeqV6Lju6/9srU62VZsxrNI7i2+2F2q9QbyXyCDouLhUqG+Uh20AAA=="
+  },
+  "scoala-lipovei/classroom": {
+    "src": "/work/scoala-lipovei/classroom.jpg",
+    "width": 2400,
+    "height": 1340,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAkAA4BaJYwCdAEPPJEXN6gA/ib9prIMnfNpdx4NNly6CLNKnrBhbfcVdouYtQuGgqnuqkwAAA=="
+  },
+  "scoala-lipovei/gym": {
+    "src": "/work/scoala-lipovei/gym.jpg",
+    "width": 2400,
+    "height": 1340,
+    "blur": "data:image/webp;base64,UklGRkYAAABXRUJQVlA4IDoAAACwAQCdASoQAAkAA4BaJZACdACZv1AAAP7r/xVKL6N3v9QSKqvFKO3cc9GFA51pVT+ZlbVgdkT4cAAA"
+  },
+  "scoala-lipovei/section": {
+    "src": "/work/scoala-lipovei/section.jpg",
+    "width": 3200,
+    "height": 481,
+    "blur": "data:image/webp;base64,UklGRjAAAABXRUJQVlA4ICQAAACwAQCdASoQAAIAA4BaJaQAAujcjTgAAP7zmUURIghgDikAAAA="
+  },
+  "scoala-lipovei/site": {
+    "src": "/work/scoala-lipovei/site.jpg",
+    "width": 1787,
+    "height": 3079,
+    "blur": "data:image/webp;base64,UklGRigAAABXRUJQVlA4IBwAAAAwAQCdASoJABAAA4BaJaQAA3AA/vOJxBqXugAA"
+  },
+  "scoala-lipovei/plan-ground": {
+    "src": "/work/scoala-lipovei/plan-ground.jpg",
+    "width": 3200,
+    "height": 1965,
+    "blur": "data:image/webp;base64,UklGRiwAAABXRUJQVlA4ICAAAAAwAQCdASoQAAoAA4BaJaQAA3AA/vQ+HJZ9LgzsXBwAAA=="
+  },
+  "scoala-lipovei/plans-upper": {
+    "src": "/work/scoala-lipovei/plans-upper.jpg",
+    "width": 2349,
+    "height": 3125,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAABwAQCdASoMABAAA4BaJaR9AAAkAAD+889NhzwzdQzMJbccgLXOiAAA"
+  },
+  "clinica-recuperare/cover": {
+    "src": "/work/clinica-recuperare/cover.jpg",
+    "width": 2400,
+    "height": 1192,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAgAA4BaJZQCw7CCj9sAAN5iPX3Hhc6uaXFsC6v0c0ke6YmV1u4WDmvfg2qn8udLugDLq9LVXQAA"
+  },
+  "clinica-recuperare/sketches": {
+    "src": "/work/clinica-recuperare/sketches.jpg",
+    "width": 1919,
+    "height": 3173,
+    "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoKABAAA4BaJaQAAueAorm87AAA/vc1vVOiG6R1DMmoiOf8+lYWquZGBbQgAAAA"
+  },
+  "clinica-recuperare/site": {
+    "src": "/work/clinica-recuperare/site.jpg",
+    "width": 3200,
+    "height": 2625,
+    "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACwAQCdASoQAA0AA4BaJaQAApZiWpEAAP7zi4raqtZ0fMFsLcPPhIox7cuOXVUmAAA="
+  },
+  "clinica-recuperare/aerial": {
+    "src": "/work/clinica-recuperare/aerial.jpg",
+    "width": 1900,
+    "height": 1201,
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAwAgCdASoQAAoAA4BaJZQC7AEegeeaaO1zAAD7pXhzdm3oRUDSdWZJpx8ohW9f7krNpZVvP+uoq260iptvjYxGGg4E8AAA"
+  },
+  "clinica-recuperare/lounge": {
+    "src": "/work/clinica-recuperare/lounge.jpg",
+    "width": 1895,
+    "height": 1201,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAAAQAgCdASoQAAoAA4BaJYwCdAECvLhWG22AAP0o1VcHlJiMtnNsaxaYSYlWjLSGZqV6nM280iGRO2kooPTZ87N5SOE2IPI1nmreAAAA"
+  },
+  "clinica-recuperare/hall": {
+    "src": "/work/clinica-recuperare/hall.jpg",
+    "width": 1896,
+    "height": 1201,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAoAA4BaJQBOgBw9zZqCAAD7oSR+oQUlul1FzL9bhX++Iz2ei6w4S0RhdA/1QHK5q1X6yRXPPuaXmeXP+FWphfwhvatuIuf9faAA"
+  },
+  "clinica-recuperare/section-perspective": {
+    "src": "/work/clinica-recuperare/section-perspective.jpg",
+    "width": 3200,
+    "height": 737,
+    "blur": "data:image/webp;base64,UklGRjQAAABXRUJQVlA4ICgAAACQAQCdASoQAAQAA4BaJaQAAudZtgAA/vYZbg/gDnXo+9oOduJCAAAA"
+  },
+  "clinica-recuperare/section": {
+    "src": "/work/clinica-recuperare/section.jpg",
+    "width": 3172,
+    "height": 840,
+    "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAAQAA4BaJaQAA3AA/vNOWAAAAA=="
+  },
+  "clinica-recuperare/plan-ground": {
+    "src": "/work/clinica-recuperare/plan-ground.jpg",
+    "width": 3170,
+    "height": 2018,
+    "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAAoAA4BaJaQAA3AA/vSsIQAAAA=="
+  },
+  "instalatii-urbane/ciupercuta": {
+    "src": "/work/instalatii-urbane/ciupercuta.jpg",
+    "width": 3200,
+    "height": 2987,
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwAgCdASoQAA8AA4BaJQBdgMXm39uqTS1kAAD5cF+5kOgUTfM/pPkGGzSR+wpfz04kWjX7z09/FwFGca5OwyFcQD1v62NKEiF7vPwWOa0gtOvSn4nGEsTqS0LFLp5sDtfLYNzvAM/oLSPCuEx+FLN0G5a0F0PBaO9opK9pmNus7CAVP8gAAA=="
+  },
+  "instalatii-urbane/the-line": {
+    "src": "/work/instalatii-urbane/the-line.jpg",
+    "width": 3200,
+    "height": 2984,
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQAA8AA4BaJQAB8V4Qj0DKbbAA/B2pglVnPqKBYuhOiPX9Q1FxNr486zHHT+0U9F4wChg5fiIQ+Jeyx1iNnlA+soJeIl4/BkQLH/SqmsAW9trj3NLwHkmiJvWffQvGlK03YBGAAAA="
+  },
+  "about/portrait": {
+    "src": "/work/about/portrait.jpg",
+    "width": 1927,
+    "height": 1949,
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQABAAA4BaJaQAAhvWDzxiEAD+r44laFnqWNUte0cUg/RKtSHV1ujWKCc9d17YBO2ESFwdmVHaVBRmch/OzCh+Iduut4AA"
+  }
+}
