@@ -31,12 +31,27 @@ export function generateStaticParams() {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  authors: [{ name: "Sabine Lieb" }],
+  applicationName: "Sabine Lieb",
+  authors: [{ name: "Sabine Lieb", url: SITE_URL }],
   creator: "Sabine Lieb",
+  publisher: "Sabine Lieb",
+  category: "architecture",
+  referrer: "strict-origin-when-cross-origin",
+  formatDetection: { telephone: false, email: false, address: false },
+  appleWebApp: { title: "Sabine Lieb", capable: true, statusBarStyle: "default" },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 },
+  },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#f2f0eb",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f2f0eb" },
+    { media: "(prefers-color-scheme: dark)", color: "#16171c" },
+  ],
+  colorScheme: "light",
 };
 
 export default async function RootLayout({ children, params }: LayoutProps<"/[lang]">) {

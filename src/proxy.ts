@@ -5,6 +5,9 @@ import { NextResponse, type NextRequest } from "next/server";
 export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  // Generated share images live under the real /ro segment; serve them directly.
+  if (/\/(opengraph|twitter)-image/.test(pathname)) return;
+
   if (pathname === "/ro" || pathname.startsWith("/ro/")) {
     const url = request.nextUrl.clone();
     url.pathname = pathname.slice(3) || "/";
@@ -20,5 +23,5 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   // Skip Next internals, metadata routes and anything with a file extension.
-  matcher: ["/((?!_next|api|sitemap.xml|robots.txt|favicon.ico|.*\\..*).*)"],
+  matcher: ["/((?!_next|api|sitemap.xml|robots.txt|llms.txt|manifest.webmanifest|favicon.ico|.*\\..*).*)"],
 };

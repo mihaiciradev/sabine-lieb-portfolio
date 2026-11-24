@@ -6,7 +6,19 @@ import { Pic } from "@/components/pic";
 import { ProjectBlocks } from "@/components/project-blocks";
 import { Words } from "@/components/words";
 import { img } from "@/content/img";
-import { getProject, getProjects, slugs } from "@/content/projects";
+import { getProject, getProjects, slugs, type Fig, type Project } from "@/content/projects";
+
+/** Every distinct figure in a project, cover first. */
+function projectImages(p: Project): Fig[] {
+  const out: Fig[] = [p.cover];
+  const add = (f: Fig) => !out.some((x) => x.image === f.image) && out.push(f);
+  for (const b of p.blocks) {
+    if (b.type === "figure" || b.type === "slats") add(b.fig);
+    if (b.type === "pair" || b.type === "row") b.figs.forEach(add);
+    if (b.type === "planSection") [b.plan, b.section].forEach(add);
+  }
+  return out;
+}
 import { href, isLang, locales, ui } from "@/i18n";
 import { abs, alternates, ogLocale } from "@/lib/site";
 
@@ -19,7 +31,6 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/work/[slug
   if (!isLang(lang)) return {};
   const project = getProject(slug, lang);
   if (!project) return {};
-  const cover = img(project.cover.image);
   const title = `${project.title} · ${project.kind}, ${project.location} ${project.year}`;
   return {
     title: `${title} · Sabine Lieb`,
@@ -28,13 +39,17 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/work/[slug
     alternates: alternates(lang, `/work/${slug}`),
     openGraph: {
       type: "article",
+      url: href(lang, `/work/${slug}`),
       locale: ogLocale(lang),
+      alternateLocale: [ogLocale(lang === "ro" ? "en" : "ro")],
       siteName: "Sabine Lieb",
       title,
       description: project.summary,
-      images: [{ url: cover.src, width: cover.width, height: cover.height, alt: project.cover.alt }],
+      authors: ["Sabine Lieb"],
+      section: project.kind,
+      tags: project.topics,
     },
-    twitter: { card: "summary_large_image" },
+    twitter: { card: "summary_large_image", title, description: project.summary },
   };
 }
 
@@ -61,7 +76,18 @@ export default async function ProjectPage({ params }: PageProps<"/[lang]/work/[s
         keywords: project.topics.join(", "),
         dateCreated: String(project.year),
         inLanguage: lang,
-        image: abs(cover.src),
+        image: projectImages(project).slice(0, 12).map((f) => ({
+          "@type": "ImageObject",
+          contentUrl: abs(img(f.image).src),
+          width: img(f.image).width,
+          height: img(f.image).height,
+          caption: f.caption ?? f.alt,
+          creator: { "@id": abs("/#sabine-lieb") },
+        })),
+        thumbnailUrl: abs(cover.src),
+        ...(project.note ? { award: project.note } : {}),
+        isPartOf: { "@id": abs("/#website") },
+        author: { "@id": abs("/#sabine-lieb") },
         url: abs(href(lang, `/work/${slug}`)),
         locationCreated: { "@type": "Place", name: project.location },
         creator: { "@type": "Person", "@id": abs("/#sabine-lieb"), name: "Sabine Lieb" },

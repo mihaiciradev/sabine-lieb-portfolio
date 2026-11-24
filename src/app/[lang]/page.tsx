@@ -34,15 +34,22 @@ export async function generateMetadata({ params }: PageProps<"/[lang]">): Promis
     title: meta[lang].title,
     description: meta[lang].description,
     alternates: alternates(lang),
+    keywords:
+      lang === "ro"
+        ? ["Sabine Lieb", "arhitect Timișoara", "portofoliu arhitectură", "Filarmonica Banatul", "proiect de diplomă arhitectură", "UPT Facultatea de Arhitectură", "pavilion expozițional", "muzeu de artă contemporană", "restaurare", "refuncționalizare"]
+        : ["Sabine Lieb", "architect Timișoara", "architecture portfolio", "Banatul Philharmonic", "architecture diploma project", "Romania architect", "exhibition pavilion", "contemporary art museum", "restoration", "adaptive reuse"],
     openGraph: {
       type: "profile",
+      firstName: "Sabine",
+      lastName: "Lieb",
+      url: href(lang),
       locale: ogLocale(lang),
+      alternateLocale: [ogLocale(lang === "ro" ? "en" : "ro")],
       title: meta[lang].title,
       description: meta[lang].description,
       siteName: "Sabine Lieb",
-      images: [{ url: "/work/filarmonica/cover.jpg", width: 2400, height: 1350 }],
     },
-    twitter: { card: "summary_large_image" },
+    twitter: { card: "summary_large_image", title: meta[lang].title, description: meta[lang].description },
   };
 }
 
@@ -50,6 +57,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
   const { lang } = await params;
   if (!isLang(lang)) notFound();
   const t = ui[lang];
+  const about = getAbout(lang);
   const projects = getProjects(lang);
   const p = (slug: string) => projects.find((x) => x.slug === slug) as Project;
   const phil = p("filarmonica-banatul");
@@ -64,15 +72,50 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": abs("/#website"),
+        url: abs("/"),
+        name: "Sabine Lieb",
+        alternateName: lang === "ro" ? "Sabine Lieb, arhitect" : "Sabine Lieb, architect",
+        inLanguage: ["ro-RO", "en"],
+        publisher: { "@id": abs("/#sabine-lieb") },
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": abs(`${href(lang)}#page`),
+        url: abs(href(lang)),
+        name: meta[lang].title,
+        description: meta[lang].description,
+        inLanguage: lang === "ro" ? "ro-RO" : "en",
+        isPartOf: { "@id": abs("/#website") },
+        mainEntity: { "@id": abs("/#sabine-lieb") },
+        primaryImageOfPage: abs("/work/filarmonica/cover.jpg"),
+      },
+      {
         "@type": "Person",
         "@id": abs("/#sabine-lieb"),
         name: "Sabine Lieb",
+        givenName: "Sabine",
+        familyName: "Lieb",
         jobTitle: t.role,
+        description: about.practice[0],
         url: abs(href(lang)),
-        image: abs("/work/about/portrait.jpg"),
+        image: { "@type": "ImageObject", url: abs("/work/about/portrait.jpg"), caption: "Sabine Lieb" },
+        workLocation: { "@type": "Place", name: "Timișoara", address: { "@type": "PostalAddress", addressLocality: "Timișoara", addressCountry: "RO" } },
         address: { "@type": "PostalAddress", addressLocality: "Timișoara", addressCountry: "RO" },
-        alumniOf: { "@type": "CollegeOrUniversity", name: "Universitatea Politehnica Timișoara" },
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: "Universitatea Politehnica Timișoara, Facultatea de Arhitectură și Urbanism",
+          sameAs: "https://www.upt.ro",
+        },
+        hasCredential: { "@type": "EducationalOccupationalCredential", credentialCategory: "degree", name: about.education[0].title },
+        knowsAbout:
+          lang === "ro"
+            ? ["arhitectură", "arhitectură culturală", "restaurare și patrimoniu", "refuncționalizare", "restructurare urbană", "scanare laser 3D", "fotogrammetrie"]
+            : ["architecture", "cultural architecture", "heritage restoration", "adaptive reuse", "urban restructuring", "3D laser scanning", "photogrammetry"],
         knowsLanguage: ["ro", "en", "de"],
+        award: about.recognition.map((r) => `${r.title} (${r.year})`),
+        hasOccupation: { "@type": "Occupation", name: t.role, occupationLocation: { "@type": "City", name: "Timișoara" } },
       },
       {
         "@type": "ItemList",
@@ -82,6 +125,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
           position: i + 1,
           url: abs(href(lang, `/work/${x.slug}`)),
           name: x.title,
+          image: abs(img(x.cover.image).src),
         })),
       },
     ],
