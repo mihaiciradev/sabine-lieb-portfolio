@@ -413,14 +413,26 @@
     "height": 2018,
     "blur": "data:image/webp;base64,UklGRiYAAABXRUJQVlA4IBoAAAAwAQCdASoQAAoAA4BaJaQAA3AA/vSsIQAAAA=="
   },
-  "instalatii-urbane/ciupercuta": {
-    "src": "/work/instalatii-urbane/ciupercuta.jpg",
+  "ciupercuta/axonometric": {
+    "src": "/work/ciupercuta/axonometric.jpg",
     "width": 3200,
-    "height": 2987,
-    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAAAwAgCdASoQAA8AA4BaJQBdgMXm39uqTS1kAAD5cF+5kOgUTfM/pPkGGzSR+wpfz04kWjX7z09/FwFGca5OwyFcQD1v62NKEiF7vPwWOa0gtOvSn4nGEsTqS0LFLp5sDtfLYNzvAM/oLSPCuEx+FLN0G5a0F0PBaO9opK9pmNus7CAVP8gAAA=="
+    "height": 1372,
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoQAAcAA4BaJYwAAu1WTFsI2WAA+XbpDmQ6QXFYUU+NgxdzS2PRuTMR5zAl1xY2WwwGNTVcdbMmWKj2fWKDlNKBAQ4sru/GcC0y0AAA"
   },
-  "instalatii-urbane/the-line": {
-    "src": "/work/instalatii-urbane/the-line.jpg",
+  "ciupercuta/before-after": {
+    "src": "/work/ciupercuta/before-after.jpg",
+    "width": 2312,
+    "height": 708,
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAUAA4BaJaQAAutNI0kWAAD11zHYpLT7czWnk5JeHf389tCE/3/IN2z2iKxXlMxu+RBowAAAAA=="
+  },
+  "ciupercuta/drawings": {
+    "src": "/work/ciupercuta/drawings.jpg",
+    "width": 2969,
+    "height": 837,
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAQAA4BaJZACdAEf8UtIeGAAy0OMoAH0jH0IauHi7vmpGStD+rOTmZoYc8gjr2JiRLBlzmMOAAAA"
+  },
+  "ciupercuta/the-line": {
+    "src": "/work/ciupercuta/the-line.jpg",
     "width": 3200,
     "height": 2984,
     "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAADwAQCdASoQAA8AA4BaJQAB8V4Qj0DKbbAA/B2pglVnPqKBYuhOiPX9Q1FxNr486zHHT+0U9F4wChg5fiIQ+Jeyx1iNnlA+soJeIl4/BkQLH/SqmsAW9trj3NLwHkmiJvWffQvGlK03YBGAAAA="

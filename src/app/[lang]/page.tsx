@@ -10,7 +10,7 @@ import { ModelFigure } from "@/components/project-blocks";
 import { Words } from "@/components/words";
 import { getAbout } from "@/content/about";
 import { img } from "@/content/img";
-import { findFig, getProjects, getSketches, getStudies, type Project } from "@/content/projects";
+import { findFig, getProjects, type Project } from "@/content/projects";
 import { href, isLang, ui, type Lang } from "@/i18n";
 import { abs, alternates, ogLocale } from "@/lib/site";
 
@@ -18,12 +18,12 @@ const meta = {
   ro: {
     title: "Sabine Lieb, arhitect · Portofoliu de arhitectură, Timișoara",
     description:
-      "Portofoliul arhitectei Sabine Lieb din Timișoara: Filarmonica Banatul (proiect de diplomă 2026), un pavilion expozițional itinerant, un muzeu de artă contemporană în parc, o rezidență artistică într-un turn de veghe, o școală și o clinică de recuperare. Planuri, secțiuni, schițe și randări.",
+      "Portofoliul arhitectei Sabine Lieb din Timișoara: Filarmonica Banatul (proiect de diplomă 2026), un pavilion expozițional itinerant, un muzeu de artă contemporană în parc, o rezidență artistică într-un turn de veghe, o școală, o clinică de recuperare și instalația urbană Ciupercuța. Planuri, secțiuni, schițe și randări.",
   },
   en: {
     title: "Sabine Lieb, architect · Architecture portfolio, Timișoara",
     description:
-      "Architecture portfolio of Sabine Lieb, Timișoara: the Banatul Philharmonic (2026 diploma project), a travelling exhibition pavilion, a contemporary art museum in a park, an artist residency in a watchtower, a school and a rehabilitation clinic. Plans, sections, sketches and renderings.",
+      "Architecture portfolio of Sabine Lieb, Timișoara: the Banatul Philharmonic (2026 diploma project), a travelling exhibition pavilion, a contemporary art museum in a park, an artist residency in a watchtower, a school, a rehabilitation clinic and the Ciupercuța urban installation. Plans, sections, sketches and renderings.",
   },
 };
 
@@ -310,7 +310,7 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         ))}
       </section>
 
-      <Studies lang={lang} />
+      <Ciupercuta project={p("ciupercuta")} lang={lang} />
       <About lang={lang} />
     </>
   );
@@ -372,55 +372,42 @@ function Hero({ project, lang, vectors }: { project: Project; lang: Lang; vector
   );
 }
 
-function Studies({ lang }: { lang: Lang }) {
+function Ciupercuta({ project, lang }: { project: Project; lang: Lang }) {
   const t = ui[lang];
-  const studies = getStudies(lang);
-  const sketches = getSketches(lang);
+  const ba = findFig(project, "ciupercuta/before-after");
   return (
     <section
-      id="studies"
-      data-nav={t.studies}
-      aria-labelledby="studies-title"
+      id="ciupercuta"
+      data-nav={project.title}
+      aria-labelledby="f-ciup"
       className="scroll-mt-16 overflow-hidden bg-paper-2 py-24 outline-none [--ground:var(--color-paper-2)] md:py-36"
     >
-      <div className="gutter grid-sheet gap-y-6">
-        <h2 id="studies-title" className="drift col-span-4 font-display text-[clamp(3rem,10vw,9rem)] font-bold leading-[0.85] tracking-[-0.035em] text-indigo md:col-span-7">
-          {t.studies}
-        </h2>
-        <p className="col-span-4 self-end text-[1.0625rem] leading-relaxed md:col-span-5 md:col-start-8">
-          {t.studiesLead} {studies.title} ({studies.studio}, {studies.year}): {studies.intro.charAt(0).toLowerCase() + studies.intro.slice(1)}
+      <div className="gutter grid-sheet items-end gap-y-6">
+        <p className="label col-span-4 text-oxblood md:col-span-2">
+          {project.number} · {project.studio}, {project.year}
         </p>
-      </div>
-
-      <div className="gutter grid-sheet mt-14 gap-y-14 md:mt-20">
-        {studies.items.map((s, i) => (
-          <div key={s.name} className={`reveal col-span-4 md:col-span-6 ${i === 1 ? "md:mt-24" : ""}`}>
-            <h3 className="mb-4 font-display text-3xl font-semibold tracking-tight">{s.name}</h3>
-            <Pic fig={s.fig} sizes="(min-width: 768px) 48vw, 100vw" />
-          </div>
-        ))}
-      </div>
-
-      <div className="mt-20 md:mt-28">
-        <div className="gutter flex items-baseline justify-between">
-          <h3 className="label text-oxblood">{t.sketchbook}</h3>
-          <p className="label text-graphite">{t.scrollSideways} →</p>
+        <h2 id="f-ciup" className="drift col-span-4 font-display text-[clamp(3.2rem,11vw,10rem)] font-bold leading-[0.85] tracking-[-0.035em] text-oxblood md:col-span-10">
+          {project.title}
+        </h2>
+        <div className="col-span-4 md:col-span-5 md:col-start-8">
+          <p className="text-[1.0625rem] leading-relaxed">{project.summary}</p>
+          <Link href={href(lang, `/work/${project.slug}`)} className="label mt-5 inline-block border-b border-ink pb-1 hover:text-oxblood">
+            {t.viewProject} →
+          </Link>
         </div>
-        <ul
-          tabIndex={0}
-          aria-label={t.sketchbook}
-          className="gutter mt-6 flex snap-x snap-mandatory scroll-px-[clamp(1rem,3.2vw,3rem)] gap-6 overflow-x-auto pb-4 [scrollbar-width:thin]"
-        >
-          {sketches.map((f) => {
-            const d = img(f.image);
-            return (
-              <li key={f.image} className="shrink-0 snap-start" style={{ width: `min(85vw, calc(52svh * ${(d.width / d.height).toFixed(3)}))` }}>
-                <Pic fig={f} sizes="(min-width: 768px) 50vw, 85vw" />
-              </li>
-            );
-          })}
-        </ul>
       </div>
+      <Link href={href(lang, `/work/${project.slug}`)} data-cursor={t.viewProject} className="gutter mt-12 block md:mt-16">
+        <ViewTransition name={`cover-${project.slug}`}>
+          <div className="drawing settle relative overflow-hidden" style={{ aspectRatio: `${img(project.cover.image).width} / ${img(project.cover.image).height}` }}>
+            <Pic fig={project.cover} fit="cover" sizes="(min-width: 1600px) 1520px, 95vw" caption={false} className="absolute inset-0" />
+          </div>
+        </ViewTransition>
+      </Link>
+      {ba ? (
+        <div className="gutter grid-sheet mt-10">
+          <Pic fig={ba} sizes="(min-width: 768px) 60vw, 100vw" className="reveal col-span-4 md:col-span-7 md:col-start-6" />
+        </div>
+      ) : null}
     </section>
   );
 }

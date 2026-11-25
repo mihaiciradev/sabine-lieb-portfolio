@@ -36,7 +36,7 @@ export function href(lang: Lang, path = "/") {
 export const ui = {
   ro: {
     skip: "Sari la conținut",
-    nav: { work: "Proiecte", studies: "Studii", about: "Despre" },
+    nav: { work: "Proiecte", about: "Despre" },
     role: "Arhitect",
     city: "Timișoara",
     heroLine:
@@ -46,10 +46,6 @@ export const ui = {
     projectsCount: (n: number) => `${n} proiecte · 2023–2026`,
     viewProject: "Vezi proiectul",
     next: "Următorul",
-    studies: "Studii",
-    studiesLead: "Piese mai mici și desenele din spatele clădirilor.",
-    sketchbook: "Caiet de schițe",
-    scrollSideways: "Derulează lateral",
     about: "Despre",
     experience: "Experiență",
     recognition: "Distincții",
@@ -99,7 +95,7 @@ export const ui = {
   },
   en: {
     skip: "Skip to content",
-    nav: { work: "Work", studies: "Studies", about: "About" },
+    nav: { work: "Work", about: "About" },
     role: "Architect",
     city: "Timișoara",
     heroLine:
@@ -109,10 +105,6 @@ export const ui = {
     projectsCount: (n: number) => `${n} projects · 2023–2026`,
     viewProject: "View project",
     next: "Next",
-    studies: "Studies",
-    studiesLead: "Smaller pieces and the drawings behind the buildings.",
-    sketchbook: "Sketchbook",
-    scrollSideways: "Scroll sideways",
     about: "About",
     experience: "Experience",
     recognition: "Recognition",

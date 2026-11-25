@@ -17,11 +17,6 @@ export function SiteHeader({ lang }: { lang: Lang }) {
             </Link>
           </li>
           <li className="max-sm:hidden">
-            <Link href={`${href(lang)}#studies`} className="underline-offset-4 hover:underline">
-              {t.nav.studies}
-            </Link>
-          </li>
-          <li className="max-sm:hidden">
             <Link href={`${href(lang)}#about`} className="underline-offset-4 hover:underline">
               {t.nav.about}
             </Link>

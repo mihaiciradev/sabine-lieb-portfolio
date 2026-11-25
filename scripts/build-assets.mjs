@@ -94,9 +94,11 @@ const jobs = [
   ["clinica-recuperare", "section", "clinica 03/04.jpg", [36, 58, 758, 250], "drawing"],
   ["clinica-recuperare", "plan-ground", "clinica 03/04.jpg", [36, 290, 758, 754], "drawing"],
 
-  // Urban installations (secondary collection)
-  ["instalatii-urbane", "ciupercuta", "interventii stradale 04/01.jpg", null, "drawing"],
-  ["instalatii-urbane", "the-line", "interventii stradale 04/02.jpg", null, "drawing"],
+  // Ciupercuța and The Line: urban installations for housing estates
+  ["ciupercuta", "axonometric", "interventii stradale 04/01.jpg", [0, 0, 1400, 600], "drawing"],
+  ["ciupercuta", "before-after", "interventii stradale 04/01.jpg", [80, 640, 1064, 950], "drawing"],
+  ["ciupercuta", "drawings", "interventii stradale 04/01.jpg", [78, 955, 1342, 1315], "drawing"],
+  ["ciupercuta", "the-line", "interventii stradale 04/02.jpg", null, "drawing"],
 
   // About
   ["about", "portrait", `${P}/Portofoliu2.jpg`, [40, 40, 475, 480], "image"],

@@ -1,3 +1,4 @@
+import { getProjects } from "@/content/projects";
 import { locales } from "@/i18n";
 import { ogImage, ogSize } from "@/lib/og";
 
@@ -20,7 +21,7 @@ export default async function Image({ params }: { params: Promise<{ lang: string
   return ogImage({
     eyebrow: ro ? "Arhitect · Timișoara" : "Architect · Timișoara",
     title: ro ? "Portofoliu de arhitectură" : "Architecture portfolio",
-    footer: ro ? "6 proiecte · 2023–2026" : "6 projects · 2023–2026",
+    footer: `${getProjects("ro").length} ${ro ? "proiecte" : "projects"} · 2023–2026`,
     cover: "work/filarmonica/cover.jpg",
   });
 }

@@ -857,70 +857,129 @@ const content: Loc<Project>[] = [
       },
     ],
   },
-];
-
-type Studies = {
-  title: string;
-  year: number;
-  studio: string;
-  intro: string;
-  items: { name: string; fig: Fig }[];
-};
-
-const studiesContent: Loc<Studies> = {
-  title: { ro: "Instalații cu caracter urban", en: "Urban installations" },
-  year: 2024,
-  studio: { ro: "Anul 4", en: "Year 4" },
-  intro: {
-    ro: "Obiecte modulare, ușor de montat și transportat, dedicate spațiilor cartierelor de blocuri, care oferă prilejul de apropiere și formare a comunităților.",
-    en: "Small modular objects for housing-estate neighbourhoods, easy to install and move, made to give neighbours a reason to meet.",
+  {
+    slug: "ciupercuta",
+    number: "07",
+    title: "Ciupercuța",
+    original: { ro: "Instalații cu caracter urban", en: "Urban installations" },
+    kind: { ro: "Instalație urbană", en: "Urban installation" },
+    year: 2024,
+    studio: { ro: "Anul 4", en: "Year 4" },
+    location: { ro: "Cartiere de blocuri", en: "Housing estates" },
+    topics: [
+      { ro: "Educație", en: "Education" },
+      { ro: "Parc", en: "Park" },
+      { ro: "Spațiu public", en: "Public space" },
+    ],
+    summary: {
+      ro: "Un baldachin roșu, trunchi-piramidal, cu luminator, care înlocuiește foișoarele uzate din parcurile cartierelor și adună vecinii în jurul unei mese de șah.",
+      en: "A red, tapered canopy with a skylight that replaces the worn gazebos of estate parks and gathers neighbours around a chess table.",
+    },
+    description: {
+      ro: "Ciupercuța (anul 4, 2024): instalație urbană modulară pentru parcurile cartierelor de blocuri, un baldachin roșu trunchi-piramidal cu luminator deasupra unei mese de șah, care înlocuiește foișoarele uzate. Din aceeași serie: The Line, un cadru metalic modular pentru expoziții, joacă și șezut. Axonometrii, situația existentă și desene.",
+      en: "Ciupercuța (Year 4, 2024): a modular urban installation for housing-estate parks, a red tapered canopy with a skylight over a chess table, replacing worn gazebos. From the same series: The Line, a modular steel frame for exhibitions, play and seating. Axonometrics, existing site and drawings.",
+    },
+    cover: {
+      image: "ciupercuta/axonometric",
+      alt: {
+        ro: "Axonometrie: un baldachin roșu trunchi-piramidal pe picioare roșii subțiri, deasupra unei mese de șah, pe o alee dintr-un parc; trecători cu un câine.",
+        en: "Axonometric: a red tapered canopy on slender red legs over a chess table on a park path, passers-by walking a dog.",
+      },
+    },
+    blocks: [
+      {
+        type: "lead",
+        text: {
+          ro: "Obiecte modulare, ușor de montat și transportat, dedicate spațiilor cartierelor de blocuri, care oferă spațiul și prilejul de apropiere și formare a comunităților.",
+          en: "Modular objects, easy to install and move, made for the shared spaces of housing estates, giving neighbours the room and the occasion to meet and form a community.",
+        },
+      },
+      {
+        type: "figure",
+        layout: "wide",
+        fig: {
+          image: "ciupercuta/axonometric",
+          alt: {
+            ro: "Axonometrie a Ciupercuței pe o alee: baldachin roșu cu luminator, masă de șah și scaune, o femeie citind sub el.",
+            en: "Axonometric of Ciupercuța on a park path: red canopy with a skylight, a chess table and stools, a woman reading beneath it.",
+          },
+          caption: { ro: "Ciupercuța în parcul cartierului", en: "Ciupercuța in the estate park" },
+          drawing: true,
+        },
+      },
+      {
+        type: "text",
+        title: { ro: "De la foișor la Ciupercuță", en: "From gazebo to Ciupercuța" },
+        body: [
+          {
+            ro: "Parcurile dintre blocuri păstrează foișoare din lemn obosite, folosite rar. Ciupercuța le înlocuiește cu un singur obiect, ușor de recunoscut: un baldachin roșu trunchi-piramidal, deschis spre cer printr-un luminator, așezat pe picioare metalice subțiri.",
+            en: "The parks between housing blocks keep tired timber gazebos that are rarely used. Ciupercuța replaces them with one recognisable object: a red tapered canopy, opened to the sky by a skylight and set on slender steel legs.",
+          },
+          {
+            ro: "Sub el, o masă de șah cu patru locuri devine un punct de întâlnire pentru vecini de toate vârstele.",
+            en: "Beneath it, a four-seat chess table becomes a meeting point for neighbours of every age.",
+          },
+        ],
+      },
+      {
+        type: "figure",
+        layout: "wide",
+        fig: {
+          image: "ciupercuta/before-after",
+          alt: {
+            ro: "Fotografii alb-negru ale foișoarelor existente din parc și, după o săgeată roșie, același foișor înlocuit de baldachinul roșu.",
+            en: "Black and white photographs of the existing park gazebos and, after a red arrow, the same spot with the red canopy in place.",
+          },
+          caption: { ro: "Situația existentă și propunerea", en: "Existing gazebos and the proposal" },
+          drawing: true,
+        },
+      },
+      {
+        type: "figure",
+        layout: "wide",
+        fig: {
+          image: "ciupercuta/drawings",
+          alt: {
+            ro: "Plan al acoperișului roșu cu luminatorul, plan al mesei de șah cu patru scaune și fațada cu o persoană așezată.",
+            en: "Roof plan of the red canopy with its skylight, plan of the chess table with four stools, and an elevation with a seated figure.",
+          },
+          caption: { ro: "Plan acoperiș, plan masă și fațadă", en: "Roof plan, table plan and elevation" },
+          drawing: true,
+        },
+      },
+      {
+        type: "text",
+        title: { ro: "Din aceeași serie: The Line", en: "From the same series: The Line" },
+        body: [
+          {
+            ro: "Cadrul metalic modular este un element multifuncțional, care poate servi simultan mai multor categorii de utilizatori. Panourile rotative permit expoziții de artă, fotografie sau lucrări locale, transformându-l într-un spațiu cultural în aer liber.",
+            en: "The modular steel frame serves several kinds of users at once. Rotating panels hold exhibitions of art, photography or local work, turning it into an open-air cultural space.",
+          },
+          {
+            ro: "Panourile pot fi folosite de copii ca suprafețe pentru desen sau scris, ca masă de joc pentru activități fizice, iar cadrele oferă bănci și locuri de relaxare, spații de întâlnire care facilitează dialogul între vecini.",
+            en: "Children can draw and write on the panels, they work as a game table for play, and the frames form benches and places to rest, meeting spaces that open conversation between neighbours.",
+          },
+        ],
+      },
+      {
+        type: "figure",
+        layout: "inset",
+        fig: {
+          image: "ciupercuta/the-line",
+          alt: {
+            ro: "Axonometrie a unui cadru roșu din oțel în zigzag cu panouri rotative, folosit pentru desen, expoziții, jocuri și șezut, cu detalii de pivot și fațade.",
+            en: "Axonometric of a zigzagging red steel frame carrying rotating panels, used for drawing, exhibitions, games and seating, with pivot details and elevations.",
+          },
+          caption: { ro: "The Line: axonometrie, pivoturile panourilor și fațade", en: "The Line: axonometric, panel pivots and elevations" },
+          drawing: true,
+        },
+      },
+    ],
   },
-  items: [
-    {
-      name: "Ciupercuța",
-      fig: {
-        image: "instalatii-urbane/ciupercuta",
-        alt: {
-          ro: "Axonometrie a unui baldachin roșu trunchi-piramidal pe picioare subțiri roșii, deasupra unei mese de șah, cu fotografii înainte și după ale unui foișor uzat și desene de plan și fațadă.",
-          en: "Axonometric of a red truncated-pyramid canopy on slender red legs over a chessboard table, with before-and-after photos of a worn park gazebo and plan and elevation drawings.",
-        },
-        caption: {
-          ro: "Un baldachin roșu cu luminator înlocuiește un foișor uzat din parc și adăpostește o masă de șah.",
-          en: "A red canopy with a skylight replaces a worn park gazebo, sheltering a chess table.",
-        },
-        drawing: true,
-      },
-    },
-    {
-      name: "The Line",
-      fig: {
-        image: "instalatii-urbane/the-line",
-        alt: {
-          ro: "Axonometrie a unui cadru roșu din oțel în zigzag cu panouri rotative, folosit pentru desen, expoziții, jocuri și șezut, cu detalii de pivot și fațade.",
-          en: "Axonometric of a zigzagging red steel frame carrying rotating panels, used for drawing, exhibitions, games and seating, with pivot details and elevations.",
-        },
-        caption: {
-          ro: "Un cadru metalic modular roșu: loc de expoziții, suprafață de desen pentru copii, masă de joc și bancă.",
-          en: "A modular red steel frame that is at once gallery, drawing board, game table and bench.",
-        },
-        drawing: true,
-      },
-    },
-  ],
-};
-
-const sketchContent: Loc<Fig>[] = [
-  { image: "filarmonica/concept", alt: { ro: "Diagramele conceptuale ale filarmonicii, cu pătrate imbricate și rotite.", en: "Philharmonic concept diagrams of rotated, nested squares." }, caption: { ro: "Filarmonica Banatul: concept", en: "Banatul Philharmonic: concept" }, drawing: true },
-  { image: "muzeu-paul-neagu/sketch", alt: { ro: "Schițe în creion ale volumelor pliate ale muzeului.", en: "Pencil sketches of the museum's folded volumes." }, caption: { ro: "Muzeul Paul Neagu: primele schițe", en: "Paul Neagu Museum: first sketches" }, drawing: true },
-  { image: "pavilion-ana-lupas/sketch-mansard", alt: { ro: "Schiță în tuș a mansardei pavilionului în carcasa sa.", en: "Pen sketch of the pavilion's attic room inside its shell." }, caption: { ro: "Pavilionul Ana Lupaș: mansarda", en: "Ana Lupaș Pavilion: the attic" }, drawing: true },
-  { image: "clinica-recuperare/sketches", alt: { ro: "Schițe ale cuplării volumelor vechi și noi.", en: "Sketches of old and new volumes coupling." }, caption: { ro: "Clinica de recuperare: strategia", en: "Rehabilitation Clinic: strategy" }, drawing: true },
-  { image: "scoala-lipovei/sketches", alt: { ro: "Schițe în pix albastru ale holurilor și spațiilor de învățare.", en: "Blue pen sketches of corridors and learning spaces." }, caption: { ro: "Școala Lipovei: al treilea spațiu", en: "Lipovei School: third spaces" }, drawing: true },
 ];
 
 export const getProjects = (lang: Lang) => content.map((p) => resolve<Project>(p, lang));
 export const getProject = (slug: string, lang: Lang) => getProjects(lang).find((p) => p.slug === slug);
-export const getStudies = (lang: Lang) => resolve<Studies>(studiesContent, lang);
-export const getSketches = (lang: Lang) => sketchContent.map((f) => resolve<Fig>(f, lang));
 /** A figure used somewhere in a project, by image key. */
 export function findFig(p: Project, image: ImageKey): Fig | undefined {
   for (const b of p.blocks) {

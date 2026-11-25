@@ -29,8 +29,8 @@ const content: Loc<About> = {
   ],
   practice: [
     {
-      ro: "Sabine Lieb este arhitect în Timișoara, absolventă a Facultății de Arhitectură și Urbanism a Universității Politehnica Timișoara (2026). Portofoliul reunește proiecte de arhitectură culturală, educațională, medicală și de restaurare, de la o filarmonică hibridă și un pavilion expozițional itinerant până la un muzeu de artă contemporană într-un parc și refuncționalizarea unui turn de veghe.",
-      en: "Sabine Lieb is an architect in Timișoara and a graduate of the Faculty of Architecture and Urbanism at Politehnica University of Timișoara (2026). The portfolio gathers cultural, educational, healthcare and restoration projects, from a hybrid philharmonic and a travelling exhibition pavilion to a contemporary art museum in a park and the reuse of a coastal watchtower.",
+      ro: "Sabine Lieb este arhitect în Timișoara, absolventă a Facultății de Arhitectură și Urbanism a Universității Politehnica Timișoara (2026). Portofoliul reunește proiecte de arhitectură culturală, educațională, medicală și de restaurare, de la o filarmonică hibridă și un pavilion expozițional itinerant până la un muzeu de artă contemporană într-un parc, refuncționalizarea unui turn de veghe și instalații urbane pentru cartierele de blocuri.",
+      en: "Sabine Lieb is an architect in Timișoara and a graduate of the Faculty of Architecture and Urbanism at Politehnica University of Timișoara (2026). The portfolio gathers cultural, educational, healthcare and restoration projects, from a hybrid philharmonic and a travelling exhibition pavilion to a contemporary art museum in a park, the reuse of a coastal watchtower and urban installations for housing estates.",
     },
     {
       ro: "Experiența din teren, care include practică în birouri de proiectare, intervenții pe patrimoniu, ateliere de meșteșug și digitalizare prin scanare laser 3D, a conturat o metodologie care îmbină precizia tehnică cu o lectură atentă a contextului uman și istoric.",
